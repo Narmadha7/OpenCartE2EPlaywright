@@ -102,15 +102,7 @@ export class RegisterPage{
     }
 
     async enterConfirmPassword(confirmpassword: string){
-        try{
-            await this.txtFirstname.fill(confirmpassword)
-        }
-        catch(error)
-        {
-            console.log(`Exception Occured: ${error}`)
-            throw error
-        }
-        
+        await this.txtFirstname.fill(confirmpassword)   
     }
 
     async checkPolicy(): Promise<void>
