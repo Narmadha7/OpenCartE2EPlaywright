@@ -4,7 +4,7 @@ export default defineConfig({
   testDir: './tests',
   fullyParallel: true, /* Run tests in files in parallel */
   retries: 1, /* Retry */
-  workers: 1,  /* Opt out of parallel tests */
+  workers: 3,  /* Opt out of parallel tests */
 
   /* Reporter to use. */
   reporter: [
